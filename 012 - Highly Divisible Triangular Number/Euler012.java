@@ -4,15 +4,7 @@ public class Euler012 {
 
 	/*
 
-	https://projecteuler.net/problem=12
-
-	Problem: What is the value of the first triangle number to have over N divisors?
-
-	Input Format: First line T, the number of testcases. Each testcase consists of N in one line.
-
-	Constraints:
-	1 <= T <= 10
-	1 <= N <= 10^3
+	Highly Divisible Triangular Number
 
 	====================================================================================================================
 
@@ -76,46 +68,6 @@ public class Euler012 {
 		return count;
 	}
 
-
-//	public static int CalcNumberOfFactors(int n) {
-//		if (n == 1) return 1;
-//		int result = 1;
-//		Map<Integer,Integer> factors = PrimeFactorization(n);
-//		for (int value : factors.values()) {
-//			result *= 1 + value;
-//		}
-//		return result;
-//	}
-//
-//	public static Map<Integer, Integer> PrimeFactorization(int n) {
-//		boolean done = false;
-//		int primeFactor = 2;
-//		int exponent = 0;
-//		//int temp = n;
-//		Map<Integer,Integer> factors = new HashMap<>();
-//		while (!isPrime(n)) {
-//
-//			exponent = 0;
-//
-//			while (n % primeFactor == 0) {
-//				exponent++;
-//				n /= primeFactor;
-//			}
-//
-//			if (exponent > 0) {
-//				factors.put(primeFactor,exponent);
-//			}
-//
-//			primeFactor = nextPrime(primeFactor);
-//
-//		}
-//
-//		if (n != 1)	factors.put(n,1);
-//
-//		return factors;
-//
-//	}
-
 	public static boolean isPrime(long x) {
 		if (x == 1 || x == 2) return true;
 		if (x % 2 == 0) return false;
@@ -124,14 +76,5 @@ public class Euler012 {
 		}
 		return true;
 	}
-
-	public static int nextPrime(int x) {
-		if (x == 2) return 3;
-		do {
-			x += 2;
-		} while (!isPrime(x));
-		return x;
-	}
-
 
 }

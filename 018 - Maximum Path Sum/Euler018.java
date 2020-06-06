@@ -1,18 +1,22 @@
 import java.util.*;
 
+/*
+
+Maximum Path Sum
+
+====================================================================================================================
+
+Approach: This can be solved by building a tree and using a modified version of Djikstra's algorithm to find the
+"longest" path instead of the shortest path. I defined my own simple Node class to use when building the tree.
+
+Time complexity: The solution calculates the "path length" to each value of the triangle. Since the number of values
+in the triangle is (n*(n+1))/2, the time complexity is O(N^2)
+
+Space complexity: The space complexity is also O(N^2)
+
+ */
+
 public class Euler018 {
-
-	/*
-
-	Approach: This can be solved by building a tree and using a modified version of Djikstra's algorithm to find the
-	"longest" path instead of the shortest path. I defined my own simple Node class to use when building the tree.
-
-	Time complexity: The solution calculates the "path length" to each value of the triangle. Since the number of values
-	in the triangle is (n*(n+1))/2, the time complexity is O(N^2)
-
-	Space complexity: The space complexity is also O(N^2)
-
-	 */
 
 	class Node {
 
@@ -25,7 +29,6 @@ public class Euler018 {
 			this.value = val;
 		}
 	}
-
 
 	public static void main(String[] args) {
 		Euler018 e018 = new Euler018();

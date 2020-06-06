@@ -1,30 +1,22 @@
 import java.util.*;
 
+/*
+
+Largest Product in a Grid
+
+====================================================================================================================
+
+Approach: This is a straightforward problem that can be solved with for loops. The code doesn't need to find the
+product of values in the up or left directions, they are the same as down and right starting at different points. It
+is necessary to check both diagonals.
+
+Time complexity: The time complexity is roughly O(N*M) where N and M are the dimensions of the grid.
+
+Space complexity: The space complexity of this approach is also O(N*M).
+
+ */
+
 public class Euler011 {
-
-	/*
-
-	https://projecteuler.net/problem=11
-
-	Problem: What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or
-	diagonally) in the 20 x 20 grid? (see link above)
-
-	Input Format: Input consists of 20 lines each containing 20 integers.
-
-	Constraints:
-	0 <= Each integer in the grid <= 100
-
-	====================================================================================================================
-
-	Approach: This is a straightforward problem that can be solved with for loops. The code doesn't need to find the
-	product of values in the up or left directions, they are the same as down and right starting at different points. It
-	is necessary to check both diagonals.
-
-	Time complexity: The time complexity is roughly O(N*M) where N and M are the dimensions of the grid.
-
-	Space complexity: The space complexity of this approach is also O(N*M).
-
-	 */
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);

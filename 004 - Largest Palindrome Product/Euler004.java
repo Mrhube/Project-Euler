@@ -1,31 +1,22 @@
 import java.util.*;
 
+/*
+
+Largest Palindrome Product
+
+====================================================================================================================
+
+Approach: It should be faster to work the problem backwards by finding the largest palindrome less than N and checking
+if it has a pair of 3-digit factors.
+
+Time complexity: Finding the next lowest palindrome is not dependent on the size of N, and neither is checking if
+that palindrome has a 3-digit factor pair. Therefore the time complexity is O(1)
+
+Space complexity: The space needed is also independent of N, so the space complexity is O(1)
+
+ */
+
 public class Euler004 {
-
-	/*
-
-	https://projecteuler.net/problem=4
-
-	Problem: Find the largest palindrome made from the product of two 3-digit numbers which is less than N.
-
-	Input Format: First line contains T that denotes the number of test cases. This is followed by T lines, each
-	containing an integer, N.
-
-	Constraints:
-	1 <= T <= 100
-	101101 < N < 1000000
-
-	====================================================================================================================
-
-	Approach: Will be faster to work the problem backwards by finding the largest palindrome less than N and checking
-	if it has a pair of 3-digit factors.
-
-	Time complexity: Finding the next lowest palindrome is not dependent on the size of N, and neither is checking if
-	that palindrome has a 3-digit factor pair. Therefore the time complexity is O(1)
-
-	Space complexity: The space needed is also independent of N, so the space complexity is O(1)
-
-	 */
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
@@ -59,7 +50,7 @@ public class Euler004 {
 
 		// Modify until it is a palindrome
 		if (num[0] == num[5]) {
-			//Do nothing
+			// Do nothing
 		} else if(num[0] < num[5]) {
 			num[5] = num[0];
 		} else {
@@ -70,7 +61,7 @@ public class Euler004 {
 		}
 
 		if (num[1] == num[4]) {
-			//Do nothing
+			// Do nothing
 		} else if(num[1] < num[4]) {
 			num[4] = num[1];
 		} else {

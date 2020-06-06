@@ -1,33 +1,24 @@
 import java.util.*;
 
+/*
+
+Smallest Multiple
+
+====================================================================================================================
+
+Approach: The solution must be a multiple of the product of all the prime numbers less than N, so calculate the
+product and then check all of its multiples. The upper limit of N is very low, so the list of prime numbers can
+be hardcoded.
+
+Time complexity: The time complexity of this solution is difficult to determine because it relies on a while loop
+that runs an unknown number of times.
+
+Space complexity: This approach uses a hardcoded array of prime numbers, so it's space complexity is O(1) and is
+determined by the upper limit of N.
+
+ */
+
 public class Euler005 {
-
-	/*
-
-	https://projecteuler.net/problem=5
-
-	Problem: What is the smallest positive number that is evenly divisible by all of the numbers from 1 to N ?
-
-	Input Format: First line contains T that denotes the number of test cases. This is followed by T lines, each
-	containing an integer, N.
-
-	Constraints:
-	1 <= T <= 10
-	1 <= N <= 40
-
-	====================================================================================================================
-
-	Approach: The solution must be a multiple of the product of all the prime numbers less than N, so calculate the
-	product and then check all of its multiples. The upper limit of N is very low, so the list of prime numbers can
-	be hardcoded.
-
-	Time complexity: The time complexity of this solution is difficult to determine because it relies on a while loop
-	that runs an unknown number of times.
-
-	Space complexity: This approach uses a hardcoded array of prime numbers, so it's space complexity is O(1) and is
-	determined by the upper limit of N.
-
-	 */
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);

@@ -1,20 +1,8 @@
 import java.util.*;
 
-public class Euler008 {
+/*
 
-	/*
-
-	https://projecteuler.net/problem=8
-
-	Problem: Find the greatest product of K consecutive digits in the N digit number.
-
-	Input Format: First line contains T that denotes the number of test cases. First line of each test case will contain
-	two integers N & K . Second line of each test case will contain a N digit integer.
-
-	Constraints:
-	1 <= T <= 100
-	1 <= K <= 7
-	K <= N <= 10^3
+	Largest Product in a Series
 
 	====================================================================================================================
 
@@ -29,6 +17,8 @@ public class Euler008 {
 	Space complexity: The space complexity is also O(N)
 
 	 */
+
+public class Euler008 {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);

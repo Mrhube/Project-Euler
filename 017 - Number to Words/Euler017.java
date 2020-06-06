@@ -1,23 +1,21 @@
 import java.util.Scanner;
 
+/*
+
+Number to Words
+
+====================================================================================================================
+
+Approach: This can be solved using switch statements and some simple recursion. The biggest concern is managing the
+spaces between words.
+
+Time complexity: The depth of recusion is a logarithmic function of N, so the time complexity is O(log N)
+
+Space complexity: The space complexity is O(1)
+
+ */
+
 public class Euler017 {
-
-	/*
-
-	https://projecteuler.net/problem=17
-
-	Problem: Given a number, you have to write it in words.
-
-	====================================================================================================================
-
-	Approach: This can be solved using switch statements and some simple recursion. The biggest concern is managing the
-	spaces between words.
-
-	Time complexity: The depth of recusion is a logarithmic function of N, so the time complexity is O(log N)
-
-	Space complexity: The space complexity is O(1)
-
-	 */
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);

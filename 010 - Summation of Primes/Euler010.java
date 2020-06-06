@@ -1,38 +1,29 @@
 import java.util.*;
 
-	/*
+/*
 
-	https://projecteuler.net/problem=10
+Summation of Primes
 
-	Problem: Find the sum of all the primes not greater than given N.
+====================================================================================================================
 
-	Input Format: The first line contains an integer T i.e. number of test cases.
-	The next T lines will contain an integer N.
+Approach: Because of the large upper limit on the number of test cases, it is important to avoid repeating
+calculations. To save time checking if numbers are prime, only odd values will be tested. To keep the code simple
+and to demonstrate it can run quickly in the worst-case scenario of 10000 test cases, the solution will calculate
+a running sum of primes for every value of N and store it in an array such that array[N] = the sum of all primes
+not greater than N.
 
-	Constraints:
-	1 <= T <= 10^4
-	1 <= N <= 10^6
+Time complexity: The time complexity of a single test case is roughly O(N^(3/2))
 
-	====================================================================================================================
+Space complexity: The space complexity of this approach is O(1) and is determined by the upper limit of N, because
+it pre-calculates every possible solution.
 
-	Approach: Because of the large upper limit on the number of test cases, it is important to avoid repeating
-	calculations. To save time checking if numbers are prime, only odd values will be tested. To keep the code simple
-	and to demonstrate it can run quickly in the worst-case scenario of 10000 test cases, the solution will calculate
-	a running sum of primes for every value of N and store it in an array such that array[N] = the sum of all primes
-	not greater than N.
+This approach could be optimized to use less time and space by only calculating values up to the highest value of N
+across all the received test cases.
 
-	Time complexity: The time complexity of a single test case is roughly O(N^(3/2))
+It could also save space by only computing the result for odd values of N, because the output for any even value of
+N is the same as the result for N - 1
 
-	Space complexity: The space complexity of this approach is O(1) and is determined by the upper limit of N, because
-	it pre-calculates every possible solution.
-
-	This approach could be optimized to use less time and space by only calculating values up to the highest value of N
-	across all the received test cases.
-
-	It could also save space by only computing the result for odd values of N, because the output for any even value of
-	N is the same as the result for N - 1
-
-	 */
+ */
 
 public class Euler010 {
 
